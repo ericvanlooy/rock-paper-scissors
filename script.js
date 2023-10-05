@@ -19,6 +19,12 @@ function playRound(playerSelection,computerSelection){
         alert(`That was not the right input, you chose ${playerSelection}`); /* announce the wrong input*/
 
     }
-
 }
-playRound();
+function gameRPS() {
+    for(i = 1; i<6; i++) {
+        console.log("This is round " + i);
+        playRound(i);
+    
+    }
+}
+gameRPS()
